@@ -75,7 +75,7 @@
   .opt:hover{ border-color:var(--gold); }
   .opt.selected{ border-color:var(--gold); background:rgba(211,161,58,0.14); }
 
-  .cta{ appearance:none; border:none; cursor:pointer; background:var(--gold); color:#1c1710; font-family:'Work Sans', sans-serif; font-weight:600; font-size:15px; padding:15px 26px; border-radius:2px; display:inline-flex; align-items:center; gap:10px; transition:background .2s, transform .15s; }
+  .cta{ appearance:none; border:none; cursor:pointer; background:var(--gold); color:#1c1710; font-family:'Work Sans', sans-serif; font-weight:600; font-size:15px; padding:15px 26px; border-radius:2px; transition:background .15s, transform .15s; }
   .cta:hover{ background:var(--gold-bright); transform:translateY(-1px); }
   .cta:disabled{ opacity:.4; cursor:not-allowed; transform:none; }
   .cta-ghost{ background:transparent; color:var(--paper-dim); border:1px solid var(--line); font-weight:500; }
@@ -123,7 +123,10 @@
       <div class="eyebrow">Test de ubicación — 5 minutos</div>
       <h1>¿En qué nivel de inglés <em>estás realmente?</em></h1>
     
-      <button class="cta" onclick="startQuiz()">Comenzar test →</button>
+      <div class="row-actions">
+        <button class="cta" onclick="startQuiz()">Comenzar test →</button>
+        <a class="cta cta-ghost" href="profesora.html">O contacta con la profesora</a>
+      </div>
     </section>
 
     <!-- Screen 1: Preguntas (rendered dynamically) -->
