@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mtra. Beatriz Mendoza — Diseño de cursos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#10221f;
+    --bg-2:#17322d;
+    --paper:#f7f2e7;
+    --paper-dim:#c9c2ac;
+    --gold:#d3a13a;
+    --gold-bright:#e6b859;
+    --line: rgba(247,242,231,0.14);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{ background:var(--bg); color:var(--paper); font-family:'Work Sans', sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap{ max-width:620px; margin:0 auto; padding:32px 24px 60px; }
+
+  .topbar{ display:flex; justify-content:space-between; align-items:center; margin-bottom:34px; }
+  .brand{ font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold-bright); }
+  .back{ font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--paper-dim); text-decoration:none; }
+  .back:hover{ color:var(--paper); }
+
+  .hero{ display:flex; flex-direction:column; align-items:center; text-align:center; margin-bottom:38px; }
+  .avatar{
+    width:120px; height:120px; border-radius:50%;
+    background:var(--bg-2); border:2px solid var(--gold);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces', serif; font-size:36px; color:var(--gold-bright);
+    margin-bottom:20px;
+  }
+  .eyebrow{ font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold-bright); margin-bottom:12px; }
+  h1{ font-family:'Fraunces', serif; font-weight:500; font-size:clamp(28px,7vw,38px); margin:0 0 10px; line-height:1.1; }
+  .role{ font-size:15px; color:var(--paper-dim); max-width:40ch; }
+
+  section{ margin-bottom:34px; }
+  h2.section-title{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--gold-bright); border-bottom:1px solid var(--line); padding-bottom:8px; margin-bottom:16px;
+  }
+  p.body-text{ font-size:15.5px; line-height:1.65; color:var(--paper-dim); margin:0 0 14px; }
+  .placeholder{ color:rgba(230,184,89,0.65); font-style:italic; }
+
+  ul.list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:12px; }
+  ul.list li{
+    background:var(--bg-2); border:1px solid var(--line); border-radius:2px;
+    padding:14px 16px; font-size:14.5px; color:var(--paper);
+    display:flex; gap:10px; align-items:flex-start;
+  }
+  ul.list li::before{ content:'—'; color:var(--gold-bright); flex:none; }
+
+  blockquote{
+    border-left:2px solid var(--gold); margin:0; padding:6px 0 6px 18px;
+    font-family:'Fraunces', serif; font-style:italic; font-size:18px; color:var(--paper); line-height:1.5;
+  }
+
+  .courses{ display:flex; flex-direction:column; gap:12px; }
+  .course-card{ background:var(--bg-2); border:1px solid var(--line); border-radius:2px; padding:16px 18px; }
+  .course-card h3{ font-family:'Fraunces', serif; font-weight:500; font-size:17px; margin:0 0 6px; color:var(--gold-bright); }
+  .course-card p{ margin:0; font-size:14px; color:var(--paper-dim); line-height:1.5; }
+
+  .cta-row{ display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; }
+  .cta{ appearance:none; border:none; cursor:pointer; background:var(--gold); color:#1c1710; font-family:'Work Sans', sans-serif; font-weight:600; font-size:15px; padding:15px 26px; border-radius:2px; display:inline-flex; align-items:center; gap:10px; text-decoration:none; transition:background .2s, transform .15s; }
+  .cta:hover{ background:var(--gold-bright); transform:translateY(-1px); }
+  .cta-ghost{ background:transparent; color:var(--paper-dim); border:1px solid var(--line); font-weight:500; }
+  .cta-ghost:hover{ background:rgba(247,242,231,0.05); color:var(--paper); }
+
+  footer.foot-note{ font-size:11.5px; color:rgba(247,242,231,0.35); margin-top:36px; line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <span class="brand">Inglés a tu medida</span>
+    <a class="back" href="index.html">← Volver al test</a>
+  </div>
+
+  <div class="hero">
+    <div class="avatar">BM</div>
+    <div class="eyebrow">Diseño de cursos</div>
+    <h1>Mtra. Beatriz Mendoza</h1>
+    <p class="role">Diseña y dirige los programas de inglés detrás de tu resultado — cada curso responde a un nivel y un objetivo específico, no a una plantilla genérica.</p>
+  </div>
+
+  <section>
+    <h2 class="section-title">Trayectoria</h2>
+    <p class="body-text">Más de 20 años de experiencia enseñando inglés. Ha dado clases en colegios de prestigio, educando a estudiantes desde nivel básico hasta nivel superior, y cuenta con maestría.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Su método</h2>
+    <blockquote>"<span class="placeholder">[Cita corta de la maestra sobre su filosofía de enseñanza — qué la hace distinta a un curso genérico.]</span>"</blockquote>
+  </section>
+
+  <section>
+    <h2 class="section-title">En qué se enfoca</h2>
+    <ul class="list">
+      <li>Cursos personales diseñados para las necesidades específicas de cada alumno.</li>
+      <li><span class="placeholder">[Enfoque 2 — ej. corrección de acento y pronunciación]</span></li>
+      <li><span class="placeholder">[Enfoque 3 — ej. inglés para contextos profesionales]</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Cursos que diseña</h2>
+    <div class="courses">
+      <div class="course-card">
+        <h3>Principiante</h3>
+        <p><span class="placeholder">[Nombre y descripción breve del curso para principiantes.]</span></p>
+      </div>
+      <div class="course-card">
+        <h3>Intermedio</h3>
+        <p><span class="placeholder">[Nombre y descripción breve del curso intermedio.]</span></p>
+      </div>
+      <div class="course-card">
+        <h3>Avanzado</h3>
+        <p><span class="placeholder">[Nombre y descripción breve del curso avanzado.]</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta-row">
+      <a class="cta" href="https://wa.me/52XXXXXXXXXX?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20de%20los%20cursos" target="_blank" rel="noopener">Escríbele por WhatsApp →</a>
+      <a class="cta cta-ghost" href="index.html">← Volver al test</a>
+    </div>
+  </section>
+
+  <footer class="foot-note">Los textos en cursiva entre corchetes siguen siendo marcadores de posición — falta la foto real, la cita sobre su método, dos enfoques más y la descripción de cada curso, antes de publicar.</footer>
+</div>
+</body>
+</html>
