@@ -223,12 +223,12 @@
       <div class="section-label">Habla con nosotros</div>
       <div class="channels">
         <a class="channel" href="https://wa.me/525512623230?text=Hola%2C%20hice%20el%20test%20de%20nivel%20y%20quiero%20saber%20m%C3%A1s" target="_blank" rel="noopener">WhatsApp <span class="arrow">→</span></a>
-      
+        <a class="channel" href="https://instagram.com/TU_USUARIO" target="_blank" rel="noopener">Instagram <span class="arrow">→</span></a>
         <a class="channel" href="beatriz_mendozamontenegro@gmail.com">Correo <span class="arrow">→</span></a>
       </div>
 
       <div class="row-actions">
-        <a class="cta" href="profesora.html">Conoce más sobre la maestra →</a>
+        <a class="cta" href="profesora.html">Conoce más sobre los cursos →</a>
       </div>
       
     </section>
@@ -241,22 +241,22 @@ const readingPassage = "Ana works at a small marketing company in Mexico City. E
 
 const questions = [
   // Sección 1 — Gramática y Estructuras
-  { section:'Sección 1 — Gramática y Estructuras', text:'My sister ___ in Mexico City.', opts:['live','lives','living'], correct:1 },
-  { section:'Sección 1 — Gramática y Estructuras', text:'There ___ two books on the table.', opts:['is','are','be'], correct:1 },
-  { section:'Sección 1 — Gramática y Estructuras', text:'One mouse, two ___.', opts:['mouses','mice','mices'], correct:1 },
-  { section:'Sección 1 — Gramática y Estructuras', text:'If it rains tomorrow, we ___ the picnic.', opts:['cancel','will cancel','cancelled'], correct:1 },
-  { section:'Sección 1 — Gramática y Estructuras', text:"She's been working here ___ 2019.", opts:['for','since','from'], correct:1 },
-  { section:'Sección 1 — Gramática y Estructuras', text:'If I ___ known about the meeting, I would have attended.', opts:['have','had','would have'], correct:1 },
-  { section:'Sección 1 — Gramática y Estructuras', text:'The bridge ___ in 1930.', opts:['built','was built','has build'], correct:1 },
+  { section:'Sección 1 — Gramática y Estructuras', text:'My sister ___ in Mexico City.', opts:['lives','live','living','lived'], correct:0 },
+  { section:'Sección 1 — Gramática y Estructuras', text:'There ___ two books on the table.', opts:['is','are','be','being'], correct:1 },
+  { section:'Sección 1 — Gramática y Estructuras', text:'One mouse, two ___.', opts:['mouses','mouse','mice','mices'], correct:2 },
+  { section:'Sección 1 — Gramática y Estructuras', text:'If it rains tomorrow, we ___ the picnic.', opts:['cancel','canceled','are cancel','will cancel'], correct:3 },
+  { section:'Sección 1 — Gramática y Estructuras', text:"She's been working here ___ 2019.", opts:['since','for','from','at'], correct:0 },
+  { section:'Sección 1 — Gramática y Estructuras', text:'If I ___ known about the meeting, I would have attended.', opts:['have','had','would have','has'], correct:1 },
+  { section:'Sección 1 — Gramática y Estructuras', text:'The bridge ___ in 1930.', opts:['built','has build','was built','is building'], correct:2 },
   // Sección 2 — Vocabulario en Contexto
-  { section:'Sección 2 — Vocabulario en Contexto', text:"Could you turn ___ the volume? It's too loud.", opts:['down','off','over'], correct:0 },
-  { section:'Sección 2 — Vocabulario en Contexto', text:'I wish I ___ more time to study.', opts:['have','had','would have'], correct:1 },
-  { section:'Sección 2 — Vocabulario en Contexto', text:"She's very ___ about her new job — she can't stop talking about it.", opts:['bored','excited','tired'], correct:1 },
-  { section:'Sección 2 — Vocabulario en Contexto', text:'After the long meeting, he was completely ___ and needed a coffee.', opts:['exhausted','thrilled','curious'], correct:0 },
+  { section:'Sección 2 — Vocabulario en Contexto', text:"Could you turn ___ the volume? It's too loud.", opts:['off','over','up','down'], correct:3 },
+  { section:'Sección 2 — Vocabulario en Contexto', text:'I wish I ___ more time to study.', opts:['had','have','would have','has'], correct:0 },
+  { section:'Sección 2 — Vocabulario en Contexto', text:"She's very ___ about her new job — she can't stop talking about it.", opts:['bored','excited','tired','worried'], correct:1 },
+  { section:'Sección 2 — Vocabulario en Contexto', text:'After the long meeting, he was completely ___ and needed a coffee.', opts:['thrilled','curious','exhausted','relaxed'], correct:2 },
   // Sección 3 — Comprensión de Lectura
-  { section:'Sección 3 — Comprensión de Lectura', passage:readingPassage, text:"What is Ana's job related to?", opts:['Marketing','Teaching','Engineering'], correct:0 },
-  { section:'Sección 3 — Comprensión de Lectura', passage:readingPassage, text:'What happened last month?', opts:['She quit her job','She was asked to lead a project','She moved to a new city'], correct:1 },
-  { section:'Sección 3 — Comprensión de Lectura', passage:readingPassage, text:'How does Ana feel now?', opts:['Nervous','Confused','More confident'], correct:2 }
+  { section:'Sección 3 — Comprensión de Lectura', passage:readingPassage, text:"What is Ana's job related to?", opts:['Teaching','Engineering','Design','Marketing'], correct:3 },
+  { section:'Sección 3 — Comprensión de Lectura', passage:readingPassage, text:'What happened last month?', opts:['She was asked to lead a project','She quit her job','She moved to a new city','She got promoted to manager'], correct:0 },
+  { section:'Sección 3 — Comprensión de Lectura', passage:readingPassage, text:'How does Ana feel now?', opts:['Nervous','More confident','Confused','Indifferent'], correct:1 }
 ];
 const TOTAL_Q = questions.length;
 const LETTERS = ['A','B','C','D'];
@@ -372,4 +372,3 @@ function showResult(){
 </script>
 </body>
 </html>
-
