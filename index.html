@@ -14,6 +14,7 @@
 <meta name="twitter:title" content="¿En qué nivel de inglés estás realmente?">
 <meta name="twitter:description" content="Test de ubicación gratis: 9 preguntas, resultado inmediato y una recomendación de curso a tu medida.">
 <meta name="twitter:image" content="images/logo.png">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -112,7 +113,7 @@
   .opt.selected{ border-color:var(--gold); background:rgba(211,161,58,0.14); }
   .opt.selected .letter{ background:var(--gold); border-color:var(--gold); color:#1c1710; }
 
-  .cta{ appearance:none; border:none; cursor:pointer; background:var(--gold); color:#1c1710; font-family:'Work Sans', sans-serif; font-weight:600; font-size:15px; padding:15px 26px; border-radius:2px; display:inline-flex; align-items:center; gap:10px; transition:background .2s, transform .15s; }
+  .cta{ appearance:none; border:none; cursor:pointer; background:var(--gold); color:#1c1710; font-family:'Work Sans', sans-serif; font-weight:600; font-size:15px; padding:15px 26px; border-radius:2px; transition:background .15s, transform .15s; }
   .cta:hover{ background:var(--gold-bright); transform:translateY(-1px); }
   .cta:disabled{ opacity:.4; cursor:not-allowed; transform:none; }
   .cta-ghost{ background:transparent; color:var(--paper-dim); border:1px solid var(--line); font-weight:500; }
@@ -170,7 +171,7 @@
     <section class="screen active" data-screen="0">
       <div class="eyebrow">Test de ubicación — 5 minutos</div>
       <h1>¿En qué nivel de inglés <em>estás realmente?</em></h1>
-      <p class="lede">Antes de recomendarte un curso, hagamos un diagnóstico rápido. 14 preguntas, resultado inmediato: principiante, intermedio o avanzado — y un curso que sí corresponde a tu punto de partida.</p>
+      <p class="lede">Antes de recomendarte un curso, hagamos un diagnóstico rápido. 9 preguntas, resultado inmediato: principiante, intermedio o avanzado — y un curso que sí corresponde a tu puntaje.</p>
       <button class="cta" onclick="startQuiz()">Comenzar test →</button>
     </section>
 
@@ -224,7 +225,7 @@
       <div class="channels">
         <a class="channel" href="https://wa.me/525512623230?text=Hola%2C%20hice%20el%20test%20de%20nivel%20y%20quiero%20saber%20m%C3%A1s" target="_blank" rel="noopener">WhatsApp <span class="arrow">→</span></a>
         <a class="channel" href="https://instagram.com/TU_USUARIO" target="_blank" rel="noopener">Instagram <span class="arrow">→</span></a>
-        <a class="channel" href="beatriz_mendozamontenegro@gmail.com">Correo <span class="arrow">→</span></a>
+        <a class="channel" href="mailto:beatriz_mendozamontenegro@gmail.com">Correo <span class="arrow">→</span></a>
       </div>
 
       <div class="row-actions">
@@ -237,7 +238,7 @@
 </div>
 
 <script>
-const readingPassage = "Ana works at a small marketing company in Mexico City. Every morning, she checks her emails before the rest of the team arrives. Last month, she was asked to lead a project for a new client. Although she was nervous at first, she has learned a lot and now feels more confident presenting her ideas in meetings.";
+const readingPassage = "Ana works at a small marketing company in Mexico City. Every morning, she checks her emails before the rest of the team arrives. Last month, she was asked to lead a project for a new client. She felt nervous at first, but her team was very supportive. Now, she is much more confident in her role.";
 
 const questions = [
   // Sección 1 — Gramática y Estructuras
@@ -255,7 +256,7 @@ const questions = [
   { section:'Sección 2 — Vocabulario en Contexto', text:'After the long meeting, he was completely ___ and needed a coffee.', opts:['thrilled','curious','exhausted','relaxed'], correct:2 },
   // Sección 3 — Comprensión de Lectura
   { section:'Sección 3 — Comprensión de Lectura', passage:readingPassage, text:"What is Ana's job related to?", opts:['Teaching','Engineering','Design','Marketing'], correct:3 },
-  { section:'Sección 3 — Comprensión de Lectura', passage:readingPassage, text:'What happened last month?', opts:['She was asked to lead a project','She quit her job','She moved to a new city','She got promoted to manager'], correct:0 },
+  { section:'Sección 3 — Comprensión de Lectura', passage:readingPassage, text:'What happened last month?', opts:['She was asked to lead a project','She quit her job','She moved to a new city','She changed her email'], correct:0 },
   { section:'Sección 3 — Comprensión de Lectura', passage:readingPassage, text:'How does Ana feel now?', opts:['Nervous','More confident','Confused','Indifferent'], correct:1 }
 ];
 const TOTAL_Q = questions.length;
